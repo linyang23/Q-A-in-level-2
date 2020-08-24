@@ -1,4 +1,4 @@
-### 第一个问题：how to use vscode
+### 0001：how to use vscode
 
 #### vscode之安装篇
 step1: 打开这个网址[vscode](https://code.visualstudio.com/download)  
