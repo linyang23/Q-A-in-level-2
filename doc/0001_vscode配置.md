@@ -1,19 +1,19 @@
 ### 第一个问题：how to use vscode
 
 #### vscode之安装篇
-step1: 打开这个网址[vscode](https://code.visualstudio.com/download)
-step2: 下载对应系统的可安装执行文件
-step3: 打开该文件，路径自己决定，其他一路全选(也可以视情况决定)
+step1: 打开这个网址[vscode](https://code.visualstudio.com/download)  
+step2: 下载对应系统的可安装执行文件  
+step3: 打开该文件，路径自己决定，其他一路全选(也可以视情况决定)  
 step4: 安装完成
 
-Q：什么是将Code注册为受支持的文件类型的编辑器
-A：选中后，VScode支持的代码文件会被设定为默认用VScode打开，比如.txt和.py等后缀的文件
-Q: 什么是添加到Path
+Q：什么是将Code注册为受支持的文件类型的编辑器  
+A：选中后，VScode支持的代码文件会被设定为默认用VScode打开，比如.txt和.py等后缀的文件  
+Q: 什么是添加到Path  
 A：选中后会自动配置环境变量，不用自己再操作，打开即用
 #### vscode之插件篇
-step1: 打开vscode
-step2: 找到左侧边栏，有一个由四个正方形构成的图标，点开即可使用插件商店
-step3: 选中搜索框，输入Chinese，出来的结果中有一个Chinese (Simplified) Language...，点击该栏右下角install，稍等片刻，整个软件右下角会弹出restart的按钮，点击该按钮
+step1: 打开vscode  
+step2: 找到左侧边栏，有一个由四个正方形构成的图标，点开即可使用插件商店  
+step3: 选中搜索框，输入Chinese，出来的结果中有一个Chinese (Simplified) Language...，点击该栏右下角install，稍等片刻，整个软件右下角会弹出restart的按钮，点击该按钮  
 step4: 此时界面变成中文，其他插件同上过程
 
 Q：有哪些插件推荐
