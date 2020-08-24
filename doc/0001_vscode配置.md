@@ -16,8 +16,8 @@ step2: 找到左侧边栏，有一个由四个正方形构成的图标，点开�
 step3: 选中搜索框，输入Chinese，出来的结果中有一个Chinese (Simplified) Language...，点击该栏右下角install，稍等片刻，整个软件右下角会弹出restart的按钮，点击该按钮  
 step4: 此时界面变成中文，其他插件同上过程
 
-Q：有哪些插件推荐
-A：
+Q：有哪些插件推荐  
+A:   
 编程支持: C/C++ | Code Runner | Language Support for Java| Python  
 美化: background | Beautify | Bracket Pair Clorizer | Rainbow Csv | vscode-icons | Material Theme  
 文件支持：Markdown Preview Enhanced | vscode-pdf  
@@ -83,4 +83,4 @@ A: 在vscode左下角可以选择使用的python版本
 step1: ctrl + shift + p,输入jupyter，选择Python: Create Blank New Jupyter Notebook」选项  
 step2: 创建xx.ipynb文件，xx自行决定  
 step3: 使用上述anaconda篇中安装包的方法，输入pip install jupyter，安装对应的包  
-step4: 点开xx.ipynb文件，愉快的debug吧
+step4: 点开xx.ipynb文件，然后愉快的debug吧
