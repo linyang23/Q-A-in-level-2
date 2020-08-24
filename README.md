@@ -3,4 +3,4 @@ There is the place that tells how I solve the problems  in the process of learni
 在这里，我将记录在日常学习计算机知识过程中遇到了哪些问题，以及我是怎么解决的。  
 
 ## 目录
-### 学习编程的第一步：拥有自己的编译器之宇宙最强编译器vscode配置
+### 学习编程的第一步：拥有自己的编译器之怎样配置宇宙最强编译器之一的vscode
