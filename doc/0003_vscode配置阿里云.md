@@ -17,9 +17,9 @@ step6: 填写密码，其他不用修改
 step1: vscode下载安装remote-ssh插件  
 step2: 在 vscode setting里搜索 remote.SSH.showLoginTerminal 配置项，并开启它（倘若此项没开启，连接服务器时将会一直停留在连接状态）  
 step3：按Ctrl + Shift + P 打开命令查找，输入 Remote-SSH:Open Configuration File，选择打开 C:\Users\你的本机用户名\.ssh\config 文件，修改为(**记得删掉#和后面的内容**)：
-// config 文件
-Host AliServer11  #AliServer11可以自己随意取
-    HostName XXX.XX.XX.XXX  #你的服务器公网IP，在之前的实例里面有
-    User root  #登陆服务器的用户名，一般是root
-step4: 再次打开命令查找，输入Remote-SSH:Connect Current Window to Host ，选择刚配置好的远程服务 AliServer11，等待连接
-step5: 连接成功在 vscode 的 TEMINAL （Ctrl + ` 可快速打开）中会提示输入登陆密码，回车即可
+// config 文件  
+Host AliServer11  #AliServer11可以自己随意取    
+    HostName XXX.XX.XX.XXX  #你的服务器公网IP，在之前的实例里面有  
+    User root  #登陆服务器的用户名，一般是root  
+step4: 再次打开命令查找，输入Remote-SSH:Connect Current Window to Host ，选择刚配置好的远程服务 AliServer11，等待连接  
+step5: 连接成功在 vscode 的 TEMINAL （Ctrl + ` 可快速打开）中会提示输入登陆密码，回车即可  
