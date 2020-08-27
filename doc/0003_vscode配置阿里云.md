@@ -23,3 +23,4 @@ Host AliServer11  #AliServer11可以自己随意取
     User root  #登陆服务器的用户名，一般是root  
 step4: 再次打开命令查找，输入Remote-SSH:Connect Current Window to Host ，选择刚配置好的远程服务 AliServer11，等待连接  
 step5: 连接成功在 vscode 的 TEMINAL （Ctrl + ` 可快速打开）中会提示输入登陆密码，回车即可  
+step6: 如下图，可以打开远程ecs服务器的文件夹了![打开文件夹](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/openfiles.png)
