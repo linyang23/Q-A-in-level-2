@@ -8,7 +8,7 @@ step3: 登录后，答题通过，然后点击领取，点击这个网站[阿里
 ##### 阿里云ecs密钥配置
 step1: 打开这个网站[阿里云ecs控制台](https://ecs.console.aliyun.com/)  
 step2：点击左侧实例与镜像，选择实例，然后点击更多，选中密码/密钥中的重置实例密码，修改为想要的密码![重置密码](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/restartkey.png)  
-step3: 重启实例
+step3: 重启实例（）  
 step4：点击远程链接![远程连接](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/farconnect.png)  
 step5: 选择workbench的立即登录，会跳转一个网页  
 step6: 填写密码，其他不用修改
