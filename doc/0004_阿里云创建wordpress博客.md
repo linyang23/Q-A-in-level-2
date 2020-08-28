@@ -83,9 +83,9 @@ step29: 打开浏览器并访问**http://<云服务器的公网IP>/wp-blog/wp-ad
 然后重复step28，就可以得到正常的网站显示了  
 ![wordpress](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/wordpress.png)  
 注册后，登录好的wordpress管理界面如下：  
-![wordpress](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/wordpressytop.png)   
+![wordpress](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/wordpresstop.png)   
 这是外面访问的页面：  
-![wordpress](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/wordpressycover.png)  
+![wordpress](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/wordpresscover.png)  
 
 
 Q: 如何卸载php？  
