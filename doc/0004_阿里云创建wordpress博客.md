@@ -74,7 +74,14 @@ step27: **cat -n /var/www/html/wp-blog/wp-config.php**(查看配置文件信息�
 step28: **systemctl restart httpd**(重启Apache服务)  
 
 ##### 使用WordPress
-step29: 打开浏览器并访问**http://<云服务器的公网IP>/wp-blog/wp-admin/install.php**，输入自己想要的站点名称】用户名和密码，填写邮箱，然后登录愉快的使用吧
+step29: 打开浏览器并访问**http://<云服务器的公网IP>/wp-blog/wp-admin/install.php**，输入自己想要的站点名称】用户名和密码，填写邮箱，然后登录愉快的使用吧.如果访问说Your PHP installation appears to be missing the MySQL extension which is required by WordPress.则说明php安装mysql相关不完整，可以添加命令：  
+**yum install php74-php-pecl-mysql-xdevapi**  
+**yum install php74-php-pecl-mysql**  
+**yum install php74-php-mysqlnd**  
+然后重复step28，就可以得到正常的网站显示了  
+![wordpress](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/wordpress.png)  
+注册后，登录的界面如下：  
+![wordpress](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/wordpressyop.png)  
 
 
 Q: 如何卸载php？  
