@@ -1,6 +1,6 @@
 ### how to create wordpress
 
-##### 购买域名，我买了一个WindAlso.top
+##### 购买域名，我买了一个WindAlso.top(当然，可以不用域名访问，直接通过阿里云服务器ip也可以)
 step1: 打开这个网站[阿里万网域名注册](https://wanwang.aliyun.com/domain)，里面有1元的域名可以购买(比如.top,.work等)  
 step2: 注册自己中意的域名，买之前查询好是否已被注册，然后购买即可，购买中间需要登记个人信息，验证邮箱和身份证（需要审核照片）  
 step3: 支付宝扫码付款，购买完成，照片未审核完的购买后状态如图![windalso](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/windalso.png)  
@@ -9,6 +9,8 @@ step3: 支付宝扫码付款，购买完成，照片未审核完的购买后状�
 step1: 打开[阿里云](https://homenew.console.aliyun.com/)  
 step2: 点击左上角三条线，选择域名，打开域名解析控制台  
 step3: 找到自己购买的域名，选择操作下方的解析，选择添加记录，在记录值中写下之前ecs服务器实例的公网ip[公网ip](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/explainip.png),主机记录填写www  
+下面是如果没有备案的情况下用域名访问的情况，也就是说如果没有备案域名，就只能通过阿里服务器的ip才能访问搭建的wordpress博客  
+![备案](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/beian.png)  
 
 ##### 登录云服务器
 step1: 点击实例中远程连接旁边的管理，点击左边本实例安全组，点击其中正在使用的那条右边的配置规则按钮  
