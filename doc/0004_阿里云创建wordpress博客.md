@@ -36,9 +36,9 @@ yum -y install mysql-community-server**
 step11: 启动 MySQL 数据库,命令为**systemctl start mysqld.service**  
 step12: 查看下MySQL运行状态（显示为绿色的active则表示已经开启）,命令为**systemctl status mysqld.service**  
 step13: 查看一下MySQL初始密码，用于后续登录。命令为**grep "password" /var/log/mysqld.log**,注意是英文的双引号  
-step14:登录数据库,命令为mysql -uroot -p，输入上面初始密码（不会明文显示）  
+step14:登录数据库,命令为**mysql -uroot -p**，输入上面初始密码（不会明文显示）  
 step15：修改默认密码为**NewPassWord1.**(注意有个英语句号)，命令为**ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassWord1.';**(注意命令有分号,且引号为英语单引号，按crtl+z可以退出该模式)  
-step16： 创建WordPress数据库，命令为**create database xx;(注意命令有分号)**，xx由自己决定   
+step16： 创建WordPress数据库，命令为**create database xx;(注意命令有分号)**，xx由自己决定，这里我们使用**create database wordpress;**  
 step17: 查看数据库创建情况，命令为**show databases;**  
 step18: 输入exit或者ctrl+z退出数据库  
 
@@ -48,13 +48,23 @@ step19: 安装php环境，命令为**yum -y install php php-mysql gd php-gd gd-d
 **rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm**  
 **rpm -Uvh http://rpms.remirepo.net/enterprise/remi-release-8.rpm**  
 添加相关的库后，启用 PHP 7.4 的 Remi 模块并进行安装，命令为：**dnf -y install dnf-utils**  
-然后安装php-74，命令为**：**yum install php74-php**  
+然后安装php-74，命令为**：**yum install php74-php** 和 **yum install php-mysql gd php-gd gd-devel php-xml php-common php-mbstring php-ldap php-pear php-xmlrpc php-imap --skip-broken**  
 step20: 创建PHP测试页面,命令为**echo "\<? php phpinfo(); ?>" > /var/www/html/phpinfo.php**  
-step21: 打开浏览器，访问**http://<云服务器公网地址>/phpinfo.php**  
+step21: 打开浏览器，访问**http://<云服务器公网地址>/phpinfo.php**,如果页面显示很多内容，说明成功，如果只显示一行源代码，说明失败，这时候输入**service httpd restart**重启httpd服务即可，再刷新刚才的页面，会发现恢复正常了
 
 ##### Wordpress安装和配置
-step22: **yum -y install wordpress**(安装wordpress)  
-step23: **cd /usr/share/wordpress**（指到路径）,然后**ln -snf /etc/wordpress/wp-config.php wp-config.php**（修改路径），**ll**（查看修改后的目录结构）  
+step22: **yum -y install wordpress**(安装wordpress) ，如果出错的话换成这步且步不进行step23和step26：先输入**cd ~**,然后输入**wget http://wordpress.org/latest.tar.gz**(做好下载特别慢的准备)，下载完之后解压**tar xzvf latest.tar.gz** ，拷贝到/var/www/html/wordpress目录**sudo rsync -avP ~/wordpress/ /var/www/html/wordpress/**，切换到wordpress目录**cd /var/www/html/wordpress**，复制wp-config.php文件**cp wp-config-sample.php wp-config.php**，编辑wp-config.php文件**sudo vim wp-config.php**，然后在配置文件里设置正确的值（如果提示已有文件，则按e进入，进去后按s或者i进入修改模式，修改完成后按esc推出编辑模式，然后按shift+:,输入x回车即可保存退出）：  
+// ** MySQL settings - You can get this info from your web host ** //  
+/** The name of the database for WordPress */  
+define('DB_NAME', 'database_name_here');  
+/** MySQL database username */  
+define('DB_USER', 'username_here');  
+/** MySQL database password */  
+define('DB_PASSWORD', 'password_here');  
+/** MySQL hostname */  
+define('DB_HOST', 'localhost');  
+设置值参考step26  
+step23: **cd /usr/share/wordpress**（指到路径）,然后**ln -snf /etc/wordpress/wp-config.php wp-config.php**（修改路径），接着输入**ll**（查看修改后的目录结构）  
 step24：**mkdir /var/www/html/wp-blog**（在Apache的根目录/var/www/html下，创建一个wp-blog文件夹，这个文件夹将会用来放你的WordPress网站程序）  
 step25: **mv * /var/www/html/wp-blog/**(把当前目录wordpress下的文件全部移到/var/www/html/wp-blog下)  
 step26: **sed -i ‘s/database_name_here/wordpress/’ /var/www/html/wp-blog/wp-config.php
@@ -63,9 +73,15 @@ sed -i ‘s/password_here/NewPassWord1./’ /var/www/html/wp-blog/wp-config.php*
 step27: **cat -n /var/www/html/wp-blog/wp-config.php**(查看配置文件信息是否修改成功)  
 step28: **systemctl restart httpd**(重启Apache服务)  
 
-##### 测试并安装WordPress
-step29: 打开浏览器并访问**http://<云服务器的公网IP>/wp-blog/wp-admin/install.php**  
+##### 使用WordPress
+step29: 打开浏览器并访问**http://<云服务器的公网IP>/wp-blog/wp-admin/install.php**，输入自己想要的站点名称】用户名和密码，填写邮箱，然后登录愉快的使用吧
 
 
-Q:如何卸载php  
-A：输入命令，**rpm -qa|grep php**，查看安装的包有哪些，然后通过**rpm -e xx**分别删除，其中xx为包名，如果无法删除，则会提示其依赖于哪些包，先卸载这些被依赖的包，然后即可删除之前无法删除的包
+Q: 如何卸载php？  
+A：输入命令，**rpm -qa|grep php**，查看安装的包有哪些，然后通过**rpm -e xx**分别删除，其中xx为包名，如果无法删除，则会提示其依赖于哪些包，先卸载这些被依赖的包，然后即可删除之前无法删除的包  
+Q: 如何删除数据库？  
+A：**drop database <数据库名>;**（输入此命令）  
+Q: php如何显示安装了哪些模块？  
+A：输入命令**php -m**  
+Q：如何将wordpress的站点地址从**http://<云服务器的公网IP>/wp-blog/**改为**http://<云服务器的公网IP>**，即直接访问主域名？  
+A：首先，打开你的wordpress后台，在设置-常规里，将站点地址改成：http://<云服务器的公网IP> 
