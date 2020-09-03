@@ -8,3 +8,4 @@ There is the place that tells how I solve the problems  in the process of learni
 ##### 0003:[vscode配置阿里云](https://github.com/linyang23/Q-A-in-level-2/blob/master/doc/0003_vscode%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E4%BA%91.md)
 ##### 0004:[阿里云配置wordpress](https://github.com/linyang23/Q-A-in-level-2/blob/master/doc/0004_%E9%98%BF%E9%87%8C%E4%BA%91%E5%88%9B%E5%BB%BAwordpress%E5%8D%9A%E5%AE%A2.md)
 ##### 0005:[JAVA Q＆A](https://github.com/linyang23/Q-A-in-level-2/blob/master/doc/0005_java_Q%26A.md)
+##### 0006:[linux使用过程中遇见的命令](https://github.com/linyang23/Q-A-in-level-2/blob/master/doc/0005_java_Q%26A.md)
