@@ -18,8 +18,10 @@
 |ctrl+z|终止当前命令|
 |sudo|管理员模式运行命令|
 |vim xx|对xx文件进行修改，若xx不存在，则创建一个新文件|
-|##### kill -9 xx(xx为PID号，通过ps命令可以查看正在运行的进程和其PID号码)|强制关闭xx进程|
-|##### whereis xx|查看xx的安装路径|
-|##### mkdir xx|创建文件夹xx|
-|##### pwd|显示当前目录的完整路径|
-|##### ./xx|执行该文件|
+|kill -9 xx(xx为PID号，通过ps命令可以查看正在运行的进程和其PID号码)|强制关闭xx进程|
+|whereis xx|查看xx的安装路径|
+|mkdir xx|创建文件夹xx|
+|pwd|显示当前目录的完整路径|
+|./xx|执行该文件|
+|gunzip xx|解压文件|
+|vim /etc/hosts|修改host文件|
