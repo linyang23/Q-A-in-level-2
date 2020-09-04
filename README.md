@@ -9,3 +9,4 @@ There is the place that tells how I solve the problems  in the process of learni
 ##### 0004:[阿里云配置wordpress](https://github.com/linyang23/Q-A-in-level-2/blob/master/doc/0004_%E9%98%BF%E9%87%8C%E4%BA%91%E5%88%9B%E5%BB%BAwordpress%E5%8D%9A%E5%AE%A2.md)
 ##### 0005:[JAVA Q＆A](https://github.com/linyang23/Q-A-in-level-2/blob/master/doc/0005_java_Q%26A.md)
 ##### 0006:[linux使用过程中遇见的命令](https://github.com/linyang23/Q-A-in-level-2/blob/master/doc/0006_linux%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E8%A7%81%E7%9A%84%E5%91%BD%E4%BB%A4.md)
+##### 0007:设计模式]()
