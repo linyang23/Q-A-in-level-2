@@ -6,10 +6,14 @@ tor Q and A
 ##### tor为什么tor难以追踪？
 ![tor难以追踪1](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/tor_2.png)
 ![tor难以追踪2](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/tor_3.png)
->参考[Tor-经典暗网技术的原理简介](https://www.bilibili.com/read/cv5684989/)
+>参考自[Tor-经典暗网技术的原理简介](https://www.bilibili.com/read/cv5684989/)
+##### tor如何封装？
 ![tor如何封装](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/tor_5.png)<br>
 - 从外到内，tcp头部-tls头部-被公钥加密的包，在每一个OR处解头部-用私钥解密后获得子包再加上tls头部-tcp头部并传出
 - 每条子路径（比如OR1到OR2）上tcp、tls封装只有一层而非三层，到达后被解开，然后送出去再加上
+参考文章：《洋葱路由追踪技术中时间特征的建模与分析》
+##### tor信元结构是什么样的？
+![tor如何封装](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/tor_6.png)<br>
 参考文章：《洋葱路由追踪技术中时间特征的建模与分析》
 ##### tor可能遭受的攻击？
 - 被动攻击
