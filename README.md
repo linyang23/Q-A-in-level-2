@@ -10,3 +10,4 @@ There is the place that tells how I solve the problems  in the process of learni
 ##### 0005:[JAVA Q＆A](https://github.com/linyang23/Q-A-in-level-2/blob/master/doc/0005_java_Q%26A.md)
 ##### 0006:[linux使用过程中遇见的命令](https://github.com/linyang23/Q-A-in-level-2/blob/master/doc/0006_linux%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E8%A7%81%E7%9A%84%E5%91%BD%E4%BB%A4.md)
 ##### 0007:[设计模式](https://github.com/linyang23/Q-A-in-level-2/blob/master/doc/0007_%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md)
+##### 0008:[算法 Q＆A](https://github.com/linyang23/Q-A-in-level-2/blob/master/doc/0008_%E7%AE%97%E6%B3%95_Q%EF%BC%86A.md)
