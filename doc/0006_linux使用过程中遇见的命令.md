@@ -25,3 +25,6 @@
 |./xx|执行该文件|
 |gunzip xx|解压文件|
 |vim /etc/hosts|修改host文件|
+|dnf list installed|查看已安装包列表|
+|dnf update|更新所有安装包|
+|dnf remove xx|卸载该包|
