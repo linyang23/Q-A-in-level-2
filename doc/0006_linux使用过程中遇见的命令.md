@@ -28,3 +28,10 @@
 |dnf list installed|查看已安装包列表|
 |dnf update|更新所有安装包|
 |dnf remove xx|卸载该包|
+|systemctl status xx.service|检查xx服务的状态|
+|systemctl start xx.service|开启xx服务|
+|firewall-cmd --zone=public --add-port=xx/tcp --permanent |防火墙开放xx端口，关闭则把add改为remove|
+|firewall-cmd --reload|防火墙配置立即生效|
+|firewall-cmd --zone=public --list-ports|查看防火墙所有开放的端口|
+|systemctl stop firewalld.service|关闭防火墙|
+|firewall-cmd --state|查看防火墙状态|
