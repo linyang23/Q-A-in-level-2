@@ -35,3 +35,7 @@
 |firewall-cmd --zone=public --list-ports|查看防火墙所有开放的端口|
 |systemctl stop firewalld.service|关闭防火墙|
 |firewall-cmd --state|查看防火墙状态|
+|uesradd ussername|新建用户|
+|passwd username|修改用户密码|
+|visudo|修改sudo权限|
+userdel -rf username|删除用户|
