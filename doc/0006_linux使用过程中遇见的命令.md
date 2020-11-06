@@ -38,4 +38,6 @@
 |uesradd ussername|新建用户|
 |passwd username|修改用户密码|
 |visudo|修改sudo权限|
-userdel -rf username|删除用户|
+|userdel -rf username|删除用户|
+|where xx|查找xx软件的位置|
+|which xx|查找xx软件的运行文件所在目录|
