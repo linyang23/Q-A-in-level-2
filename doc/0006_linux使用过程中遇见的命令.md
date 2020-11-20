@@ -41,3 +41,6 @@
 |userdel -rf username|删除用户|
 |where xx|查找xx软件的位置|
 |which xx|查找xx软件的运行文件所在目录|
+|du -sh|查看文件夹大小|
+|gunzip xx.gz|解压gz文件|
+|sc_analysis_dump xx.warts >> yy.txt|将warts文件转为txt查看|
