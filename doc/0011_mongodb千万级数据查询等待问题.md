@@ -22,13 +22,10 @@ with open(r'.\1113_jp.txt', 'r', encoding='utf-8') as lines:
             res = col.find_one({"traceroute": {"$regex": '^' + d + ".*?"}}, max_time_ms=30000)  #设定30s的单次查询上限时间
         except pymongo.errors.ExecutionTimeout as identifier:
             i += 1
-            print('超时')
             with open(r'.\trace_node.txt', 'a', encoding='utf-8') as outlines:
                 outlines.write('第' + str(i) + "个ip——" + line.strip() + ': 数据库查找超时' + '\n')
         else:            
             i += 1
-            print(i)
-            print(line)
             with open(r'.\trace_node.txt', 'a', encoding='utf-8') as outlines:
                 outlines.write('第' + str(i) + "个ip——" + line.strip() + ': 已找到 ' + str(res['traceroute']) + '\n')
 ```
