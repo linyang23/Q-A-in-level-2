@@ -19,7 +19,7 @@ with open(r'.\1113_jp.txt', 'r', encoding='utf-8') as lines:
         c = line.split('.')
         d = c[0] + '.' + c[1] + '.' + c[2]  #此处我是想查询/24子网          
         try:
-            res = col.find_one({"traceroute": {"$regex": '^' + d + ".*?"}}, max_time_ms=30000)  #设定30s的单次查询上限时间
+            res = col.find_one({"traceroute": {"$regex": '^' + d + ".*?"}}, max_time_ms=30000,no_cursor_timeout=True)  #设定30s的单次查询上限时间,并设置游标永不超时（生产环境请勿这样操作，因为一旦程序因为意外终止，mongodb会需要被重启，否则这些游标会一直留在MongoDB上，占用资源）
         except pymongo.errors.ExecutionTimeout as identifier:
             i += 1
             with open(r'.\trace_node.txt', 'a', encoding='utf-8') as outlines:
