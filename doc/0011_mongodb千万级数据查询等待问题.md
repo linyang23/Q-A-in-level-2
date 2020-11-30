@@ -32,4 +32,4 @@ with open(r'.\1113_jp.txt', 'r', encoding='utf-8') as lines:
             with open(r'.\trace_node.txt', 'a', encoding='utf-8') as outlines:
                 outlines.write('第' + str(i) + "个ip——" + line.strip() + ': 已找到 ' + str(res['traceroute']) + '\n')
 ```
-效果如下：[!tracenode]()
+效果如下：[!tracenode](https://github.com/linyang23/Q-A-in-level-2/blob/master/photo/tracenode.png)
