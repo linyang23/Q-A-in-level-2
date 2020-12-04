@@ -14,3 +14,4 @@ There is the place that tells how I solve the problems  in the process of learni
 ##### 0009:[通过代理服务访问被wall掉的vultr服务器](https://github.com/linyang23/Q-A-in-level-2/blob/master/doc/0009_%E9%80%9A%E8%BF%87%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E8%AE%BF%E9%97%AE%E8%A2%ABwall%E6%8E%89%E7%9A%84vultr%E6%9C%8D%E5%8A%A1%E5%99%A8.md)
 ##### 0010:[mongodb直接复制data文件夹](https://github.com/linyang23/Q-A-in-level-2/blob/master/doc/0010_mongodb%E7%9B%B4%E6%8E%A5%E5%A4%8D%E5%88%B6data%E6%96%87%E4%BB%B6%E5%A4%B9.md)
 ##### 0011:[mongodb千万级数据查询等待问题](https://github.com/linyang23/Q-A-in-level-2/blob/master/doc/0011_mongodb%E5%8D%83%E4%B8%87%E7%BA%A7%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98.md)
+##### 0012:[neo4j重复创建节点的问题](https://github.com/linyang23/Q-A-in-level-2/blob/master/doc/0012_neo4j%E9%87%8D%E5%A4%8D%E5%88%9B%E5%BB%BA%E8%8A%82%E7%82%B9%E7%9A%84%E9%97%AE%E9%A2%98.md)
