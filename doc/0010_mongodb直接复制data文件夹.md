@@ -4,7 +4,6 @@
 - 删除data文件夹里面的storage.bson文件
 - 删除data文件夹里面的mongod.lock文件
 - 删除data文件夹里面的WiredTiger.lock文件
-- 删除data文件夹里面的WiredTiger.lock文件
 - 删除data文件夹里面的journal文件夹
 - cd到mongodb的安装路径（.../bin）
 - 输入命令：mongod --repair --dbpath /www/server/mongodb/data,后者路径为data文件夹路径
